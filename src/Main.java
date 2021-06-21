@@ -23,5 +23,18 @@ public class Main {
 
         }
         System.out.println("Lowest number is " + lowest);
+
+        int highest = 0;
+
+        for (int i = 1; i < numbers.size(); i++) {
+            highest = numbers.get(0);
+
+            if (numbers.get(i) > highest) {
+                highest = numbers.get(i);
+
+            }
+
+        }
+        System.out.println("Lowest number is " + highest);
     }
 }
