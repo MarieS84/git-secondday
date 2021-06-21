@@ -9,7 +9,12 @@ public class Main {
         numbers.add(40);
         numbers.add(50);
 
+        findLowestNumber(numbers);
+        findHighestNumber(numbers);
 
+    }
+
+    public static void findLowestNumber(ArrayList<Integer> numbers) {
 
         int lowest = 0;
 
@@ -24,6 +29,10 @@ public class Main {
         }
         System.out.println("Lowest number is " + lowest);
 
+    }
+
+    public static void findHighestNumber(ArrayList<Integer> numbers) {
+
         int highest = 0;
 
         for (int i = 1; i < numbers.size(); i++) {
@@ -35,6 +44,7 @@ public class Main {
             }
 
         }
-        System.out.println("Lowest number is " + highest);
+        System.out.println("Highest number is " + highest);
     }
 }
+
